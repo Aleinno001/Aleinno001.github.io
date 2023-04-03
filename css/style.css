@@ -5,31 +5,31 @@ body {
 }
 
 header {
+
+}
+
+.navHeader {
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.leftHeaderColumn {
+    width: 15%
+}
+
+.centerHeaderColumn {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 
-header#leftHeaderColumn {
+.rightHeaderColumn {
     display: flex;
-    flex-direction: row;
-
+    width: 15%;
 }
 
-header#centerHeaderColumn {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-header#rightHeaderColumn {
-    display: flex;
-    flex-direction: row;
-    justify-self: flex-end;
-
-}
-
-h1#subTitle {
+.subTitle {
     color: #000000;
     padding: 10px;
     text-align: center;
@@ -37,14 +37,14 @@ h1#subTitle {
     font-style: italic;
 }
 
-img#title {
+.title {
     alignment: center;
     width: 100%;
     height: auto;
 }
 
 /*container*/
-#drop-menu {
+.drop-menu {
     margin: 0 auto;
     padding: 0;
     width: 100%;
@@ -52,7 +52,7 @@ img#title {
 
 /*menu*/
 
-ul#menu {
+ul.menu {
     margin:60px 0 0;
     padding: 0;
     list-style: none;
@@ -62,7 +62,7 @@ ul#menu {
     font-size:80%
 }
 
-ul#menu li {
+ul.menu li {
     margin:0;
     padding:0;
     float:left;
@@ -71,7 +71,7 @@ ul#menu li {
     position: relative;
 }
 
-ul#menu li a {
+ul.menu li a {
     float: left;
     padding:12px 30px;
     color: #fff;
@@ -79,12 +79,12 @@ ul#menu li a {
     text-decoration:none;
 }
 
-ul#menu li a:hover {
+ul.menu li a:hover {
     background: #666;
     color:#fff
 }
 
-ul#menu ul {
+ul.menu ul {
     margin:2px 0 0;
     padding:0;
     display:inline-block;
@@ -98,7 +98,7 @@ ul#menu ul {
     background: #444;
 }
 
-ul#menu li:hover ul {
+ul.menu li:hover ul {
     opacity: 1;
     visibility: visible;
 }
