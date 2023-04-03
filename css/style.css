@@ -26,6 +26,7 @@ header {
 
 .rightHeaderColumn {
     display: flex;
+    align-items: center;
     width: 15%;
 }
 
@@ -43,82 +44,64 @@ header {
     height: auto;
 }
 
-/*container*/
-.drop-menu {
-    margin: 0 auto;
-    padding: 0;
-    width: 100%;
+.notify {
+    padding-right: 50px;
 }
 
-/*menu*/
+.menu {
 
-ul.menu {
-    margin:60px 0 0;
-    padding: 0;
+}
+
+.menu ul {
     list-style: none;
-    float: left;
+    margin: 0;
+    padding: 0 0 0 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.menu ul li {
+    width: 12.5%;
+}
+@media (max-width: 40em) {
+    .menu ul li {
+        width: 100%;
+    }
+}
+.menu ul li > ul {
+    display: none;
+    flex-direction: column;
+}
+.menu ul li > ul li {
     width: 100%;
-    background-color: #CC0000;
-    font-size:80%
 }
-
-ul.menu li {
-    margin:0;
-    padding:0;
-    float:left;
-    display: block;
-    border-right: 1px solid #222;
-    position: relative;
+.menu ul li:hover > ul {
+    display: flex;
 }
-
-ul.menu li a {
-    float: left;
-    padding:12px 30px;
-    color: #fff;
+.menu a {
     text-transform: uppercase;
-    text-decoration:none;
-}
-
-ul.menu li a:hover {
-    background: #666;
-    color:#fff
-}
-
-ul.menu ul {
-    margin:2px 0 0;
-    padding:0;
-    display:inline-block;
-    list-style: none;
-    opacity: 0;
-    visibility: hidden;
-    position: absolute;
-    top: 38px;
-    left: 0;
-    z-index:9999;
-    background: #444;
-}
-
-ul.menu li:hover ul {
-    opacity: 1;
-    visibility: visible;
-}
-
-ul#menu ul li {
-    float: none;
     display: block;
-    border: 0;
+    background: #AA0022;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    font-family: Helvetica;
+    text-decoration: none;
+    text-align: center;
+}
+.sub-menu li > a {
+    background: white;
+    color: #000000;
+    margin: 5px;
+
+}
+.sub-menu li:hover > a {
+    background: #AA0022;
+    color: white;
+    margin: 5px;
 }
 
-ul#menu ul a {
-    padding:10px;
-    width: 130px;
-    display: block;
-    white-space: nowrap;
-    float: none;
-    text-transform: none;
-}
-
-ul#menu ul a:hover {
-    background-color: #0186ba;
-    color:#fff
+.menu .sub-menu > a:after {
+    content: "^";
+    padding-left: 5px;
 }
