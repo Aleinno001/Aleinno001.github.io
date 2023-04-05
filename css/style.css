@@ -9,26 +9,26 @@ header {
     flex-direction: column;
 }
 
-    .navHeader {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
+.navHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
 
-    .leftHeaderColumn {
-        width: 15%;
-    }
+.leftHeaderColumn {
+    width: 15%;
+}
 
-    .centerHeaderColumn {
-        display: flex;
-        flex-direction: column;
-    }
+.centerHeaderColumn {
+    display: flex;
+    flex-direction: column;
+}
 
-    .rightHeaderColumn {
-        display: flex;
-        align-items: center;
-        width: 15%;
-    }
+.rightHeaderColumn {
+    display: flex;
+    align-items: center;
+    width: 15%;
+}
 
 .subTitle {
     color: #000000;
@@ -57,7 +57,7 @@ header {
     border:1px solid #000000
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 80em) {
     .navHeader {
         display: flex;
         flex-direction: row;
@@ -65,25 +65,9 @@ header {
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 80em) {
     .leftHeaderColumn {
         width: 0;
-    }
-}
-
-@media screen and (max-width: 500px) {
-    .centerHeaderColumn {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-    }
-}
-
-@media screen and (max-width: 500px) {
-    .rightHeaderColumn {
-        display: flex;
-        align-items: flex-start;
-        width: 15%;
     }
 }
 
@@ -95,13 +79,12 @@ header {
     margin: 0;
     padding: 0 0 0 0;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
 .menu ul li {
-    width: auto;
-    max-width: 12.5%;
+    width: 12.5%;
 }
 @media (max-width: 40em) {
     .menu ul li {
@@ -131,7 +114,7 @@ header {
     text-align: center;
 }
 .sub-menu li > a {
-    width: 600%;
+    width: 200%;
     display: flex;
     background: white;
     color: #000000;
@@ -139,7 +122,7 @@ header {
 
 }
 .sub-menu li:hover > a {
-    width: 600%;
+    width: 200%;
     background: #AA0022;
     color: white;
     margin: 5px;
@@ -150,12 +133,123 @@ header {
     padding-left: 5px;
 }
 
-.startPadding > a {
-    width: 100%;
-    height: 16px;
+.lowerHeader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.endPadding > a{
-    width: 100px;
-    height: 16px;
+.headerNews {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0 10px 0;
+    border-top: lightgray 1px solid;
+    border-bottom: lightgray 1px solid;
+}
+
+.smallNews {
+    display: flex;
+    flex-direction: row;
+    width: 25%;
+}
+
+.smallNewsImg {
+    width: 20%;
+    min-width: 50px;
+    max-width: 80px;
+    height: 20%;
+    min-height: 50px;
+    max-height: 80px;
+    margin: 10px 10px 10px 10px;
+}
+
+.smallNewsText {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+}
+
+.smallNewsTitle {
+    font-size: 90%;
+    font-weight: bold;
+    font-family: Helvetica;
+    color: #000000;
+    margin: 10px 0 10px 0;
+}
+
+.smallNewsParagraph {
+    font-size: 80%;
+    font-weight: lighter;
+    font-family: Helvetica;
+    color: #000000;
+    margin: 0 0 10px 0;
+}
+
+.trending {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.trendingTitle {
+    font-size: 75%;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-family: Helvetica;
+    color: #000000;
+    margin: 10px 10px 10px 10px;
+}
+
+.trendList {
+    list-style: none;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.trendItem {
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+
+.trendList a {
+    display: flex;
+    height: 10%;
+    text-transform: uppercase;
+    font-weight: lighter;
+    padding: 10px;
+    font-family: Helvetica;
+    font-size: 70%;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    align-items: center;
+    border-left: gray 1px solid;
+    border-right: gray 1px solid;
+}
+
+.trendList a:hover {
+    border-bottom: black 1px solid;
+}
+
+.mainNews {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainAd {
+    display: flex;
+    justify-content: center;
+}
+
+.mainAdImg {
+    margin: 20px 0 20px 0;
+    max-width: 80%;
 }
