@@ -388,6 +388,30 @@ a {
     font-weight: lighter;
 }
 
+.articleText {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.line {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 40%;
+    border-bottom: #AA0022 1px solid;
+}
+
+.articleTitle {
+    font-size: 150%;
+    color: #AA0022;
+}
+
+.mainContentImg {
+    width: 150px;
+    height: 90px;
+}
+
 .rightNav {
     display: flex;
     flex-direction: column;
@@ -449,8 +473,8 @@ a {
 }
 
 .contentBlockImg {
-    min-width: 90px;
-    min-height: 90px;
+    width: 90px;
+    height: 90px;
 }
 
 .contentBlockText {
@@ -471,7 +495,6 @@ a {
 
 .contentBlockMore {
     font-size: 70%;
-    padding-left: 55%;
 }
 
 .secondaryAd {
