@@ -88,6 +88,11 @@ a {
     border:1px solid #000000
 }
 
+.logIn {
+    visibility: hidden;
+    display: none;
+}
+
 @media screen and (min-device-width: 640px) and (max-width: 80em) {
     .navHeader {
         display: flex;
@@ -141,6 +146,7 @@ a {
     font-weight: bold;
     font-size: 100%;
     text-align: center;
+    border: #AA0022 1px solid;
 }
 .sub-menu li > a {
     width: 200%;
@@ -269,10 +275,33 @@ a {
 
     .title2 {
         visibility: visible;
+        margin-bottom: 30px;
     }
 
     .subTitle {
         visibility: hidden;
+        display: none;
+    }
+
+    .notify {
+        visibility: hidden;
+        display: none;
+    }
+
+    .subscribe {
+        visibility: hidden;
+        display: none;
+    }
+
+    .signIn {
+        visibility: hidden;
+        display: none;
+    }
+
+    .logIn {
+        visibility: visible;
+        display: flex;
+        border:1px solid #000000
     }
 
     .popMenu {
