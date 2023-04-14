@@ -22,6 +22,20 @@ p {
     color: #000000;
 }
 
+label {
+    font-size: 120%;
+}
+
+@media screen and (max-device-width: 640px) {
+    label {
+        font-size: 220%;
+    }
+
+    input {
+        scale: 180%;
+    }
+}
+
 a {
     font-family: Helvetica, serif;
     text-decoration: none;
@@ -251,10 +265,34 @@ a {
     border-bottom: black 1px solid;
 }
 
+@media screen and (max-device-width: 640px) {
+    .smallNewsImg {
+        width: 120px;
+        height: 120px;
+    }
+
+    .smallNewsTitle {
+        font-size: 190%;
+    }
+
+    .smallNewsParagraph {
+        font-size: 180%;
+    }
+
+    .trendingTitle {
+        font-size: 190%;
+    }
+
+    .trendList a {
+        font-size: 170%;
+    }
+}
+
 @media  screen and (max-device-width: 640px) {
     .upperHeader {
         position: fixed;
         width: 100%;
+        z-index: 1;
     }
 
     .subTitle {
@@ -350,6 +388,21 @@ a {
     color: #AA0022;
 }
 
+@media screen and (max-device-width: 640px) {
+    .contentImg {
+        width: 130px;
+        height: 130px;
+    }
+
+    .contentTitle {
+        font-size: 190%;
+    }
+
+    .sponsoredContentTitle {
+        font-size: 200%;
+    }
+}
+
 .sponsoredContentBody {
     display: flex;
     flex-direction: row;
@@ -401,6 +454,16 @@ a {
     font-size: 90%;
     align-items: center;
     margin-left: 10px;
+}
+
+@media screen and (max-device-width: 640px) {
+    .centerMainNewsTitle {
+        font-size: 250%;
+    }
+
+    .newsDescription {
+        font-size: 190%;
+    }
 }
 
 .authorName {
@@ -464,8 +527,6 @@ a {
     width: 150px;
     height: 90px;
 }
-
-
 
 .rightNav {
     display: flex;
@@ -552,6 +613,37 @@ a {
     font-size: 70%;
 }
 
+@media screen and (max-device-width: 640px) {
+    .mainContentImg {
+        width: 300px;
+        height: 180px;
+    }
+
+    .articleTitle {
+        font-size: 250%;
+    }
+
+    .followUsTitle {
+        font-size: 230%;
+    }
+
+    .contentBlockTitle {
+        font-size: 250%;
+    }
+
+    .contentBlockTextTitle {
+        font-size: 220%;
+    }
+
+    .contentBlockDescription {
+        font-size: 200%;
+    }
+
+    .contentBlockMore {
+        font-size: 170%;
+    }
+}
+
 .secondaryAd {
     display: flex;
     flex-direction: column;
@@ -621,6 +713,10 @@ a {
         padding: 0;
         width: 100%;
     }
+}
+
+footer {
+    width: 100%;
 }
 
 
@@ -706,6 +802,24 @@ a {
     border-top: lightgray 3px solid;
 }
 
+@media screen and (max-device-width: 640px) {
+    .footerContentTitle {
+        font-size: 250%;
+    }
+
+    .footerContent h1 {
+        font-size: 250%;
+    }
+
+    .footerContentTitle h2 {
+        font-size: 220%;
+    }
+
+    .footerContent p {
+        font-size: 150%;
+    }
+}
+
 .secondFooter {
     margin-top: 15px;
     padding-top: 15px;
@@ -722,6 +836,7 @@ a {
     flex-direction: row;
     justify-content: center;
     align-self: center;
+    flex-wrap: wrap;
     margin-bottom: 30px;
 }
 
@@ -736,12 +851,6 @@ a {
     width: 600px;
 }
 
-@media (max-width: 80em) {
-    .newsletters {
-        width: 60%;
-    }
-}
-
 .contactsTitle {
     text-transform: uppercase;
     font-weight: bold;
@@ -754,21 +863,26 @@ a {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    max-height: 130px;
+    max-height: 45%;
     margin-bottom: 15px;
 }
 
 .emailInput {
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
 }
 
 .emailTextInput {
     max-width: 150px;
+    align-self: center;
 }
 
 .submitButton {
-    max-width: 50px;
+    width: 50px;
+    height: 20px;
+    align-self: center;
     border:1px solid #4a4a4a
 }
 
@@ -781,6 +895,21 @@ a {
     font-size: 80%;
     margin-top: 0;
     margin-bottom: 15px;
+}
+
+@media screen and (max-device-width: 640px) {
+    .contactsTitle {
+        font-size: 220%;
+    }
+
+    .termsAndPrivacy p {
+        font-size: 180%;
+    }
+
+    .submitButton {
+        width: 75px;
+        height: 30px;
+    }
 }
 
 .termsAndPrivacy p:hover {
@@ -813,7 +942,11 @@ a {
 
 @media (max-width: 80em) {
     .topics {
-        width: 100%;
+        width: 95%;
+    }
+
+    .findUs {
+        max-height: 300px;
     }
 }
 
@@ -852,6 +985,16 @@ a {
 .topicItem a{
     font-size: 120%;
     color: black;
+}
+
+@media screen and (max-device-width: 640px) {
+    .topicTitle {
+        font-size: 220%;
+    }
+
+    .topicItem a {
+        font-size: 220%;
+    }
 }
 
 .topicItem a:hover {
@@ -911,4 +1054,14 @@ a {
     padding-right: 5px;
     border-right: gray 2px solid;
     font-size: 120%;
+}
+
+@media screen and (max-device-width: 640px) {
+    .linkItem a {
+        font-size: 220%;
+    }
+
+    .copyrights p {
+        font-size: 220%;
+    }
 }
