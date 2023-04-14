@@ -12,17 +12,17 @@ header {
 
 h1 {
     font-weight: bold;
-    font-family: Helvetica;
+    font-family: Helvetica, serif;
     color: #000000;
 }
 
 p {
-    font-family: Helvetica;
+    font-family: Helvetica, serif;
     color: #000000;
 }
 
 a {
-    font-family: Helvetica;
+    font-family: Helvetica, serif;
     text-decoration: none;
 }
 
@@ -33,12 +33,27 @@ a {
 }
 
 .leftHeaderColumn {
+    display: flex;
     width: 15%;
+    justify-content: center;
+    align-items: center;
+}
+
+.popMenu {
+    visibility: hidden;
 }
 
 .centerHeaderColumn {
     display: flex;
     flex-direction: column;
+}
+
+.title {
+    visibility: visible;
+}
+
+.title2 {
+    visibility: hidden;
 }
 
 .rightHeaderColumn {
@@ -73,7 +88,7 @@ a {
     border:1px solid #000000
 }
 
-@media screen and (max-width: 80em) {
+@media screen and (min-device-width: 640px) and (max-width: 80em) {
     .navHeader {
         display: flex;
         flex-direction: row;
@@ -81,7 +96,7 @@ a {
     }
 }
 
-@media screen and (max-width: 80em) {
+@media screen and (min-device-width: 640px) and (max-width: 80em) {
     .leftHeaderColumn {
         width: 0;
     }
@@ -90,8 +105,6 @@ a {
 .menu {
     overflow: hidden;
 }
-
-/* when scrolling if .menu is not visible anymore it should become position:fixed */
 
 .menu ul {
     list-style: none;
@@ -105,7 +118,7 @@ a {
 .menu ul li {
     width: 12.5%;
 }
-@media (max-width: 40em) {
+@media screen and (min-device-width: 640px) and (max-width: 40em) {
     .menu ul li {
         width: 100%;
     }
@@ -148,6 +161,7 @@ a {
     content: "^";
     padding-left: 5px;
 }
+
 
 .lowerHeader {
     display: flex;
@@ -239,6 +253,38 @@ a {
     border-bottom: black 1px solid;
 }
 
+@media  screen and (max-device-width: 640px) {
+    .navHeader {
+        background: #AA0022;
+    }
+
+    .upperHeader {
+        position: fixed;
+        width: 100%;
+    }
+
+    .title {
+        visibility: hidden;
+    }
+
+    .title2 {
+        visibility: visible;
+    }
+
+    .subTitle {
+        visibility: hidden;
+    }
+
+    .popMenu {
+        visibility: visible;
+        height: 50px;
+    }
+
+    .lowerHeader {
+        visibility: hidden;
+    }
+}
+
 .mainNews {
     display: flex;
     flex-direction: column;
@@ -318,7 +364,7 @@ a {
     width: 600px;
 }
 
-@media (max-width: 80em) {
+@media  screen and (min-device-width: 640px) and (max-width: 80em) {
     .centerNav {
         width: 35%;
     }
@@ -532,6 +578,27 @@ a {
     max-height: 90%;
 }
 
+@media  screen and (max-device-width: 640px) {
+    .mainAdImg {
+        visibility: hidden;
+        display: none;
+    }
+
+    .leftNav {
+        visibility: hidden;
+        display: none;
+    }
+
+    .centerNav {
+        width: 100%;
+    }
+
+    .rightNav {
+        visibility: hidden;
+        display: none;
+    }
+}
+
 
 .firstFooter {
     margin-top: 15px;
@@ -581,6 +648,7 @@ a {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .footerContent {
