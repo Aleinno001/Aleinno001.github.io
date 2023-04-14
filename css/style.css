@@ -11,6 +11,7 @@ header {
 }
 
 h1 {
+
     font-weight: bold;
     font-family: Helvetica, serif;
     color: #000000;
@@ -48,14 +49,6 @@ a {
     flex-direction: column;
 }
 
-.title {
-    visibility: visible;
-}
-
-.title2 {
-    visibility: hidden;
-}
-
 .rightHeaderColumn {
     display: flex;
     align-items: center;
@@ -71,7 +64,7 @@ a {
 }
 
 .title {
-    max-width: 200%;
+    width: 100%;
     height: auto;
 }
 
@@ -88,20 +81,23 @@ a {
     border:1px solid #000000
 }
 
-.logIn {
-    visibility: hidden;
-    display: none;
-}
-
-@media screen and (min-device-width: 640px) and (max-width: 80em) {
+@media screen and (max-width: 80em) {
     .navHeader {
         display: flex;
         flex-direction: row;
-        justify-content: left;
+        justify-content: flex-start;
+        background: #fcfbf7;
+        padding-bottom: 5%;
+        border-bottom: lightgrey 5px solid;
     }
 }
 
-@media screen and (min-device-width: 640px) and (max-width: 80em) {
+@media screen and (min-device-width: 60px) and (max-width: 80em) {
+    .centerHeaderColumn {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
     .leftHeaderColumn {
         width: 0;
     }
@@ -123,11 +119,7 @@ a {
 .menu ul li {
     width: 12.5%;
 }
-@media screen and (min-device-width: 640px) and (max-width: 40em) {
-    .menu ul li {
-        width: 100%;
-    }
-}
+
 .menu ul li > ul {
     display: none;
     flex-direction: column;
@@ -221,7 +213,7 @@ a {
 }
 
 .trendingTitle {
-    font-size: 75%;
+    font-size: 90%;
     text-transform: uppercase;
     margin: 10px 10px 10px 10px;
 }
@@ -260,30 +252,12 @@ a {
 }
 
 @media  screen and (max-device-width: 640px) {
-    .navHeader {
-        background: #AA0022;
-    }
-
     .upperHeader {
         position: fixed;
         width: 100%;
     }
 
-    .title {
-        visibility: hidden;
-    }
-
-    .title2 {
-        visibility: visible;
-        margin-bottom: 30px;
-    }
-
     .subTitle {
-        visibility: hidden;
-        display: none;
-    }
-
-    .notify {
         visibility: hidden;
         display: none;
     }
@@ -298,19 +272,23 @@ a {
         display: none;
     }
 
-    .logIn {
-        visibility: visible;
-        display: flex;
-        border:1px solid #000000
+    .notify {
+        width: 50%;
     }
 
     .popMenu {
         visibility: visible;
-        height: 50px;
+        height: 100px;
+        margin-left: 150px;
+    }
+
+    .menu {
+        visibility: hidden;
+        display: none;
     }
 
     .lowerHeader {
-        visibility: hidden;
+        margin-top: 15%;
     }
 }
 
@@ -361,15 +339,15 @@ a {
 }
 
 .contentTitle {
-    margin: 0 0 0 10px;
     font-size: 90%;
+    margin: 0 0 0 10px;
     text-align: left;
 }
 
 .sponsoredContentTitle {
+    font-size: 100%;
     margin: 0 0 0 0;
     color: #AA0022;
-    font-size: 100%;
 }
 
 .sponsoredContentBody {
@@ -587,6 +565,14 @@ a {
     max-width: max-content;
 }
 
+@media screen and (max-device-width: 640px) {
+    .secondaryAd img {
+        width: 100%;
+        height: auto;
+        max-height: none;
+    }
+}
+
 .selectableOption {
     display: flex;
     flex-direction: column;
@@ -609,22 +595,31 @@ a {
 
 @media  screen and (max-device-width: 640px) {
     .mainAdImg {
-        visibility: hidden;
-        display: none;
+        width: 100%;
+    }
+
+    .mainNavs {
+        flex-direction: column;
+        justify-content: center;
+        width: 95%;
     }
 
     .leftNav {
-        visibility: hidden;
-        display: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
     }
 
     .centerNav {
+        margin: 0;
+        padding: 0;
         width: 100%;
     }
 
     .rightNav {
-        visibility: hidden;
-        display: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
     }
 }
 
