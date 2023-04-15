@@ -197,11 +197,6 @@ a {
     width: 25%;
 }
 
-.contentImg {
-    width: 90px;
-    height: 90px;
-}
-
 .smallNewsImg {
     width: 80px;
     height: 80px;
@@ -374,6 +369,11 @@ a {
     flex-direction: row;
     align-content: flex-start;
     margin: 0 0 20px 0;
+}
+
+.contentImg {
+    width: 90px;
+    height: 90px;
 }
 
 .contentTitle {
