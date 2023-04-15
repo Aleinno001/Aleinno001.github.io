@@ -550,13 +550,16 @@ a {
 .search {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-evenly;
 }
 
 .form {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+}
+
+.goImg {
+    width: 40px;
 }
 
 .search input[type=text]{
@@ -625,6 +628,10 @@ a {
 
     .followUsTitle {
         font-size: 230%;
+    }
+
+    .goImg {
+        width: 70px;
     }
 
     .contentBlockImg {
