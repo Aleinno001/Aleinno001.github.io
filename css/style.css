@@ -197,6 +197,11 @@ a {
     width: 25%;
 }
 
+.contentImg {
+    width: 90px;
+    height: 90px;
+}
+
 .smallNewsImg {
     width: 80px;
     height: 80px;
@@ -369,11 +374,6 @@ a {
     flex-direction: row;
     align-content: flex-start;
     margin: 0 0 20px 0;
-}
-
-.contentImg {
-    width: 90px;
-    height: 90px;
 }
 
 .contentTitle {
@@ -627,6 +627,11 @@ a {
         font-size: 230%;
     }
 
+    .contentBlockImg {
+        width: 120px;
+        height: 120px;
+    }
+
     .contentBlockTitle {
         font-size: 250%;
     }
@@ -712,6 +717,14 @@ a {
         margin: 0;
         padding: 0;
         width: 100%;
+    }
+
+    .voteBlock img {
+        width: 130px;
+    }
+
+    .voteBlock  p {
+        font-size: 150%;
     }
 }
 
@@ -907,8 +920,8 @@ footer {
     }
 
     .submitButton {
-        width: 75px;
-        height: 30px;
+        width: 80px;
+        height: 32px;
     }
 }
 
