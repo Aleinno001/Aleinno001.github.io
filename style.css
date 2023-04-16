@@ -27,6 +27,10 @@ label {
 }
 
 @media screen and (max-device-width: 640px) {
+    p {
+        font-size: 150%;
+    }
+
     label {
         font-size: 220%;
     }
@@ -653,6 +657,10 @@ a {
 
     .contentBlockMore {
         font-size: 170%;
+    }
+
+    .linkText {
+        font-size: 150%;
     }
 }
 
